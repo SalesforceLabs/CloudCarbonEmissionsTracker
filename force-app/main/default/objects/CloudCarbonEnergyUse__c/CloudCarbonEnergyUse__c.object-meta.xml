@@ -159,7 +159,7 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Cloud Carbon Energy Uses</pluralLabel>
+    <pluralLabel>Cloud Carbon Energy Use</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
