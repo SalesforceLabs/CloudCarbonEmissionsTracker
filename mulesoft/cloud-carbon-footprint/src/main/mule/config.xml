@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway" xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
+	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="732548bc-c59f-43ff-b1e9-f7789af163a8" >
+		<salesforce:basic-connection username="${sfdc.user}" password="${sfdc.pass}" securityToken="${sfdc.token}" url="https://login.salesforce.com/services/Soap/u/56.0" />
+	</salesforce:sfdc-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="4c5eed57-150c-4e83-a27c-f54bf7ef287e" file="config.yaml" />
+	<api-gateway:autodiscovery apiId="${apiid}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="b1b22289-2d7d-4c1d-91a2-55ea5ec7ce2e" flowRef="cloud-carbon-footprint-main" />
+</mule>

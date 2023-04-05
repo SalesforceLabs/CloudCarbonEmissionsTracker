@@ -159,8 +159,15 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Cloud Carbon Energy Use</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <pluralLabel>Cloud Carbon Energy Uses</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>CloudCarbonEmissionsFactor__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Cost__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Emissions__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Service_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Service_Provider__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Service_Region__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
